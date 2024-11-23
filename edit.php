@@ -39,13 +39,22 @@ $data = mysqli_fetch_array($edit);
                 <input type="hidden" name="id" value="<?=$data['id']?>">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Nama_Event</label>
-                    <input type="text" readonly value="<?=$data['kode']?>" name="kode" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="text" readonly value="<?=$data['nama_event']?>" name="nama_event" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text"></div>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Lokasi</label>
-                    <input type="text" value="<?=$data['jurusan']?>" name="jurusan" class="form-control" id="exampleInputPassword1">
+                    <input type="text" value="<?=$data['lokasi']?>" name="lokasi" class="form-control" id="exampleInputPassword1">
                 </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Tanggal</label>
+                    <input type="date" value="<?=$data['tanggal']?>"name="tanggal"class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Jumlah Peserta</label>
+                    <input type="text" value="<?=$data['jml_peserta']?>" name="jml_peserta" class="form-control" id="exampleInputPassword1">
+                </div>
+
                     <button type="submit" class="btn btn-primary">Update</button>
                     <button type="reset" class="btn btn-info">reset</button>
             </form>
