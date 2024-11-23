@@ -6,12 +6,12 @@ include_once("koneksi.php");
 $name = $_POST['nama'];
 $lokasi = $_POST['lokasi'];
 $tanggal = $_POST['tanggal'];
-$jumlah = $_POST['jumlah'];
+$jml_peserta = $_POST['jumlah'];
 
 
 
 #3menulis query
-$sunting = "UPDATE events SET kode='$kode',jurusan='$jurusan' WHERE id='$id'";
+$sunting = "UPDATE events SET nama='$name',lokasi='$lokasi',tanggal='$tanggal',jumlah='$jml_peserta' WHERE id='$id'";
 
 #4 jalankan query
 $proses = mysqli_query($koneksi,$sunting);
