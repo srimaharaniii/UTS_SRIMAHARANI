@@ -48,8 +48,10 @@
       ?>
     <tr>
       <th scope="row"><?=$nomor++?></th>
-      <td><?=$data['kode']?></td>
-      <td><?=$data['jurusan']?></td>
+      <td><?=$data['nama_event']?></td>
+      <td><?=$data['lokasi']?></td>
+      <td><?=$data['tanggal']?></td>
+      <td><?=$data['jml_peserta']?></td>
       <td>
         <a class="btn btn-info btn-sm" href="edit.php?id=<?=$data['id']?>"><i class="fa-solid fa-pen-to-square"></i></a>
         <!-- Button trigger modal -->
