@@ -21,7 +21,7 @@
             <form action="proses.php" method="POST" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Nama Event</label>
-                    <input type="text" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="text" name="nama_event" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text"></div>
                 </div>
                 <div class="mb-3">
@@ -33,8 +33,8 @@
                     <input type="date" name="tanggal"class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Jumlah</label>
-                    <input type="text" name="jumlah" class="form-control" id="exampleInputPassword1">
+                    <label for="exampleInputPassword1" class="form-label">Jumlah Peserta</label>
+                    <input type="text" name="jml_peserta" class="form-control" id="exampleInputPassword1">
                 </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     <button type="reset" class="btn btn-info">reset</button>
